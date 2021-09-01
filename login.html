@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <main class="bg-light py-5" style="height: 100vh">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-md-6 text-center d-none d-md-block py-4">
+            <img src="/img/bg-login.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md-4">
+            <div class="auth-wrapper">
+              <form action="" class="mt-5">
+                <h2 class="h2 text-primary fw-bold">Logo</h2>
+                <p>Please login to your account to continue shopping</p>
+                <div class="my-4">
+                  <button
+                    class="
+                      btn btn-outline-primary
+                      bg-white
+                      w-100
+                      text-primary
+                      py-2-5
+                    "
+                  >
+                    <i class="bi bi-google"></i>
+                    Sign in with Google
+                  </button>
+                </div>
+                <p class="my-4">Or</p>
+                <div class="form-group mb-3">
+                  <label for="email">Email</label>
+                  <input
+                    name="email"
+                    id="email"
+                    type="text"
+                    class="form-control bg-light"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input
+                    name="password"
+                    id="password"
+                    type="text"
+                    class="form-control bg-light"
+                  />
+                </div>
+                <div class="my-2">
+                  <a class="text-secondary" href="/forgot-password.html"
+                    >Forgot Password ?</a
+                  >
+                </div>
+                <div>
+                  <a
+                    href="/my-account.html"
+                    class="btn btn-primary py-2-5 text-white w-100"
+                  >
+                    Sign In with Email
+                  </a>
+                  <div class="text-center mt-2">
+                    <a class="text-secondary" href="/register.html"
+                      >New here ? Register a new account</a
+                    >
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

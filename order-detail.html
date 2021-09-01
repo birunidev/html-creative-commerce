@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Detail Page</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand fw-bold text-primary" href="/">Logo</a>
+          <button
+            class="navbar-toggler border-0 text-dark"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="bi bi-list fs-3"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex search-comp">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-primary rounded-0 text-white px-3 btn-search"
+                type="submit"
+              >
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item me-lg-3 d-none d-lg-block">
+                <a class="nav-link" aria-current="page" href="/cart.html">
+                  <img src="/img/ic-cart.svg" />
+                </a>
+              </li>
+              <li class="nav-item me-lg-3 d-none d-lg-block">
+                <a class="nav-link" href="/my-account.html">
+                  <img src="/img/ic-delivery.svg" />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/my-account.html">
+                  <img width="40" src="/img/user-placeholder.png" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="my-5 main-fixed-top">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
+              <li class="breadcrumb-item">
+                <a href="/my-account.html">My Account</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="/my-account.html">Orders</a>
+              </li>
+              <li class="breadcrumb-item active fw-bold" aria-current="page">
+                #INV930252
+              </li>
+            </ol>
+          </nav>
+          <div class="row mt-5">
+            <div class="col-md-2">
+              <div class="side-menu">
+                <ul>
+                  <li>
+                    <a href="/my-account.html">
+                      <img src="/img/ic-my-orders.svg" />
+                      My Orders
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/address.html">
+                      <img src="/img/ic-address.svg" />
+                      Address
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/profile.html">
+                      <img src="/img/ic-profile.svg" />
+                      Profile
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript.void(0)">
+                      <img src="/img/ic-logout.svg" />
+                      Logout
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-10">
+              <div class="mt-4 mt-md-0 d-flex justify-content-between">
+                <p class="text-merri fw-semi mb-4">Order Details</p>
+                <p class="text-merri fw-semi mb-4">No. Order: #INV930252</p>
+              </div>
+              <div class="order-tracker">
+                <div class="order-tracker-item done">
+                  <div class="circle">
+                    <svg
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18.375 14H20.125V15.75H18.375V14Z"
+                        fill="#2cda94"
+                      />
+                      <path
+                        d="M7.875 14H14.875V15.75H7.875V14Z"
+                        fill="#2cda94"
+                      />
+                      <path
+                        d="M18.375 10.5H20.125V12.25H18.375V10.5Z"
+                        fill="#2cda94"
+                      />
+                      <path
+                        d="M7.875 10.5H14.875V12.25H7.875V10.5Z"
+                        fill="#2cda94"
+                      />
+                      <path d="M7.875 7H20.125V8.75H7.875V7Z" fill="#2cda94" />
+                      <path
+                        d="M21.875 1.75H6.125C5.66101 1.75046 5.21616 1.93499 4.88807 2.26307C4.55999 2.59116 4.37546 3.03601 4.375 3.5V25.375C4.375 25.6071 4.46719 25.8296 4.63128 25.9937C4.79538 26.1578 5.01794 26.25 5.25 26.25H6.125C6.26085 26.2501 6.39485 26.2185 6.51636 26.1577C6.63787 26.097 6.74354 26.0087 6.825 25.9L8.75 23.3336L10.675 25.9C10.76 26.0035 10.8668 26.0869 10.9878 26.1441C11.1089 26.2013 11.2411 26.231 11.375 26.231C11.5089 26.231 11.6411 26.2013 11.7622 26.1441C11.8832 26.0869 11.99 26.0035 12.075 25.9L14 23.3336L15.925 25.9C16.01 26.0035 16.1168 26.0869 16.2378 26.1441C16.3589 26.2013 16.4911 26.231 16.625 26.231C16.7589 26.231 16.8911 26.2013 17.0122 26.1441C17.1332 26.0869 17.24 26.0035 17.325 25.9L19.25 23.3336L21.175 25.9C21.2565 26.0087 21.3622 26.0969 21.4837 26.1576C21.6052 26.2184 21.7392 26.25 21.875 26.25H22.75C22.9821 26.25 23.2046 26.1578 23.3687 25.9937C23.5328 25.8296 23.625 25.6071 23.625 25.375V3.5C23.6245 3.03601 23.44 2.59116 23.1119 2.26307C22.7838 1.93499 22.339 1.75046 21.875 1.75ZM21.875 23.9164L19.95 21.35C19.865 21.2465 19.7582 21.1631 19.6372 21.1059C19.5161 21.0487 19.3839 21.019 19.25 21.019C19.1161 21.019 18.9839 21.0487 18.8628 21.1059C18.7418 21.1631 18.635 21.2465 18.55 21.35L16.625 23.9164L14.7 21.35C14.615 21.2465 14.5082 21.1631 14.3872 21.1059C14.2661 21.0487 14.1339 21.019 14 21.019C13.8661 21.019 13.7339 21.0487 13.6128 21.1059C13.4918 21.1631 13.385 21.2465 13.3 21.35L11.375 23.9164L9.45 21.35C9.36505 21.2465 9.2582 21.1631 9.13716 21.1059C9.01612 21.0487 8.88389 21.019 8.75 21.019C8.61611 21.019 8.48388 21.0487 8.36284 21.1059C8.2418 21.1631 8.13495 21.2465 8.05 21.35L6.125 23.9164V3.5H21.875V23.9164Z"
+                        fill="#2cda94"
+                      />
+                    </svg>
+                  </div>
+                  <p>Order Placed</p>
+                </div>
+
+                <div class="order-tracker-item">
+                  <div class="circle">
+                    <img src="/img/ic-order-paid.svg" />
+                  </div>
+                  <p>Customer Paid</p>
+                </div>
+
+                <div class="order-tracker-item">
+                  <div class="circle">
+                    <img src="/img/ic-order-shipped.svg" />
+                  </div>
+                  <p>Order Shipped</p>
+                </div>
+
+                <div class="order-tracker-item">
+                  <div class="circle">
+                    <img src="/img/ic-box.svg" />
+                  </div>
+                  <p>Order Received</p>
+                </div>
+
+                <div class="order-tracker-item">
+                  <div class="circle">
+                    <img src="/img/ic-order-complete.svg" />
+                  </div>
+                  <p>Order Completed</p>
+                </div>
+              </div>
+              <div
+                class="my-4 d-flex justify-content-between align-items-center"
+              >
+                <p>
+                  Tracking code: <span class="ms-3 fw-bold">5782083710931</span>
+                </p>
+                <div>
+                  <button
+                    class="btn btn-outline-primary btn-hover-white px-4 py-2-3"
+                  >
+                    View Invoice
+                  </button>
+                  <button class="btn btn-primary text-white px-4 py-2-3">
+                    Confirm Payment
+                  </button>
+                </div>
+              </div>
+              <div class="shipping-detail">
+                <p class="mb-4">Shipping Address:</p>
+                <table class="table table-borderless">
+                  <tr>
+                    <th>Name</th>
+                    <td class="text-secondary">John Doe</td>
+                  </tr>
+                  <tr>
+                    <th>Phone</th>
+                    <td class="text-secondary">088436548923</td>
+                  </tr>
+                  <tr>
+                    <th>Province</th>
+                    <td class="text-secondary">East Java</td>
+                  </tr>
+                  <tr>
+                    <th>City</th>
+                    <td class="text-secondary">Malang</td>
+                  </tr>
+                  <tr>
+                    <th>Address</th>
+                    <td class="text-secondary">
+                      1901 Thornridge Cir. Shiloh, Hawaii 81063
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Zip Code</th>
+                    <td class="text-secondary">67452</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="order-cards">
+                <div class="order-card">
+                  <div class="order-items">
+                    <p>Order Items:</p>
+                    <div class="order-item cart-item my-3">
+                      <div class="cart-item__product">
+                        <div class="cart-item__product__img">
+                          <img src="/img/product-1.png" alt="" />
+                        </div>
+                        <div class="cart-item__product__title">
+                          <p class="fw-semi m-0">Some clothes title here</p>
+                          <small class="text-secondary">Rp. 399.000</small>
+                        </div>
+                      </div>
+                      <div class="cart-item__qty">
+                        <p class="text-secondary fw-semi">Rp. 399.000</p>
+                      </div>
+                    </div>
+                    <div class="order-item cart-item my-3">
+                      <div class="cart-item__product">
+                        <div class="cart-item__product__img">
+                          <img src="/img/product-2.png" alt="" />
+                        </div>
+                        <div class="cart-item__product__title">
+                          <p class="fw-semi m-0">Some clothes title here</p>
+                          <small class="text-secondary">Rp. 399.000</small>
+                        </div>
+                      </div>
+                      <div class="cart-item__qty">
+                        <p class="text-secondary fw-semi">Rp. 399.000</p>
+                      </div>
+                    </div>
+                    <div class="order-item cart-item my-3">
+                      <div class="cart-item__product">
+                        <div class="cart-item__product__img">
+                          <img src="/img/product-3.png" alt="" />
+                        </div>
+                        <div class="cart-item__product__title">
+                          <p class="fw-semi m-0">Some clothes title here</p>
+                          <small class="text-secondary">Rp. 399.000</small>
+                        </div>
+                      </div>
+                      <div class="cart-item__qty">
+                        <p class="text-secondary fw-semi">Rp. 399.000</p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr />
+                  <div>
+                    <div class="ms-auto total">
+                      <table class="table table-borderless">
+                        <tr>
+                          <td>Total</td>
+                          <th class="text-end">Rp. 1.299.000</th>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <p class="text-white fw-bold">Logo</p>
+            <p class="text-white">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
+              magni inventore dolore tenetur, tempore iusto accusantium culpa in
+              eius esse.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <p class="text-white fw-bold mb-3">Links</p>
+            <ul>
+              <li>
+                <a class="text-white" href="/">Home</a>
+              </li>
+              <li>
+                <a class="text-white" href="/shop.html">Shop</a>
+              </li>
+              <li>
+                <a class="text-white" href="/my-account.html">My Account</a>
+              </li>
+              <li>
+                <a class="text-white" href="#">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <p class="text-white fw-bold">Payment Method:</p>
+            <div class="payment-methods">
+              <img src="/img/ovo-logo.jpg" alt="" />
+              <img src="/img/qris-logo-2.jpg" alt="" />
+              <img src="/img/gopay-logo.jpg" alt="" />
+              <img src="/img/shopee-pay-logo.png" alt="" />
+              <img src="/img/mandiri-logo-2.jpg" alt="" />
+              <img src="/img/bni-logo.jpg" alt="" />
+              <img src="/img/bri-logo-2.jpg" alt="" />
+              <img src="/img/atm-logo.jpg" alt="" />
+              <img src="/img/dana-logo.jpg" alt="" />
+              <img src="/img/link-aja-logo.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

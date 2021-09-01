@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <main>
+      <section class="my-5">
+        <div class="container">
+          <p class="text-primary h5 fw-bold mb-4">Logo</p>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a class="text-secondary text-decoration-none" href="/cart.html"
+                  >Cart</a
+                >
+              </li>
+              <li class="breadcrumb-item active">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Billing</a
+                >
+              </li>
+              <li class="breadcrumb-item active fw-bold">
+                <a href="#" class="text-dark text-decoration-none">Payment</a>
+              </li>
+              <li class="breadcrumb-item active">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Finish</a
+                >
+              </li>
+            </ol>
+          </nav>
+
+          <div class="row justify-content-between">
+            <div class="col-md-7">
+              <p>Choose Payment Options</p>
+              <div class="payment-list">
+                <div class="payment-item">
+                  <input type="radio" name="payment_method" id="payment-1" />
+                  <label for="payment-1">
+                    <div class="payment-item__info">
+                      <img src="/img/bca-logo.png" class="me-3" alt="" />
+                      <p>BCA Virtual Account</p>
+                    </div>
+                    <div class="payment-item__radio">
+                      <div class="inside"></div>
+                    </div>
+                  </label>
+                </div>
+                <div class="payment-item">
+                  <input type="radio" name="payment_method" id="payment-2" />
+                  <label for="payment-2">
+                    <div class="payment-item__info">
+                      <img src="/img/qris-logo.png" class="me-3" alt="" />
+                      <p>E-Wallet Payment</p>
+                    </div>
+                    <div class="payment-item__radio">
+                      <div class="inside"></div>
+                    </div>
+                  </label>
+                </div>
+                <div class="payment-item">
+                  <input type="radio" name="payment_method" id="payment-3" />
+                  <label for="payment-3">
+                    <div class="payment-item__info">
+                      <img src="/img/mandiri-logo.png" class="me-3" alt="" />
+                      <p>Mandiri Virtual Account</p>
+                    </div>
+                    <div class="payment-item__radio">
+                      <div class="inside"></div>
+                    </div>
+                  </label>
+                </div>
+                <div class="payment-item">
+                  <input type="radio" name="payment_method" id="payment-4" />
+                  <label for="payment-4">
+                    <div class="payment-item__info">
+                      <img src="/img/bri-logo.png" class="me-3" alt="" />
+                      <p>BRI Virtual Account</p>
+                    </div>
+                    <div class="payment-item__radio">
+                      <div class="inside"></div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="mt-4 text-end"></div>
+            </div>
+            <div class="col-md-4">
+              <div class="checkout-items my-5">
+                <div class="checkout-item">
+                  <div class="checkout-item__product__img">
+                    <img src="/img/product-1.png" alt="" />
+                  </div>
+                  <div class="checkout-item__product__title">
+                    <p class="fw-semi m-0">Some clothes title here 1x</p>
+                    <small class="text-secondary">Rp. 399.000</small>
+                  </div>
+                </div>
+                <div class="checkout-item">
+                  <div class="checkout-item__product__img">
+                    <img src="/img/product-5.png" alt="" />
+                  </div>
+                  <div class="checkout-item__product__title">
+                    <p class="fw-semi m-0">Some clothes title here 1x</p>
+                    <small class="text-secondary">Rp. 399.000</small>
+                  </div>
+                </div>
+                <div class="checkout-item">
+                  <div class="checkout-item__product__img">
+                    <img src="/img/product-3.png" alt="" />
+                  </div>
+                  <div class="checkout-item__product__title">
+                    <p class="fw-semi m-0">Some clothes title here 1x</p>
+                    <small class="text-secondary">Rp. 399.000</small>
+                  </div>
+                </div>
+              </div>
+              <table class="table table-borderless mt-4 w-100">
+                <tr class="py-5">
+                  <td>Subtotal</td>
+                  <td class="text-end text-primary">Rp. 1.299.000</td>
+                </tr>
+                <tr class="py-5">
+                  <td>Tax (10% of purchases)</td>
+                  <td class="text-end text-primary">Rp. 129.000</td>
+                </tr>
+                <tr class="py-5" style="border-top: 1px solid #dbdbdb">
+                  <td class="h5 fw-bold">Total</td>
+                  <td class="h5 fw-bold text-end">Rp. 1.399.000</td>
+                </tr>
+              </table>
+              <a
+                href="/finish.html"
+                class="btn btn-primary py-2-5 px-5 text-white w-100"
+              >
+                Pay Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

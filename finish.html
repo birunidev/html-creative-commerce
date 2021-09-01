@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Succeeded</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <main>
+      <section class="my-5">
+        <div class="container">
+          <p class="text-primary h5 fw-bold mb-4">Logo</p>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a class="text-secondary text-decoration-none" href="/cart.html"
+                  >Cart</a
+                >
+              </li>
+              <li class="breadcrumb-item active">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Billing</a
+                >
+              </li>
+              <li class="breadcrumb-item active">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Payment</a
+                >
+              </li>
+              <li class="breadcrumb-item active fw-bold">
+                <a href="#" class="text-dark text-decoration-none">Finish</a>
+              </li>
+            </ol>
+          </nav>
+
+          <div class="row justify-content-center">
+            <div class="col-md-7">
+              <div class="text-center">
+                <h1 class="text-merri text-dark fw-semi">Thank you</h1>
+                <p>
+                  Your Order has been successful. Please check your account for
+                  more details
+                </p>
+              </div>
+              <div class="success-animation text-center">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player
+                  src="https://assets4.lottiefiles.com/packages/lf20_4qldwfx4.json"
+                  background="transparent"
+                  speed="1"
+                  style="width: 300px; height: 300px; margin: auto"
+                  loop
+                  autoplay
+                ></lottie-player>
+              </div>
+              <div class="payment-detail">
+                <table class="table table-bordered">
+                  <tr>
+                    <th>No Order</th>
+                    <td>#INV89532401</td>
+                  </tr>
+                  <tr>
+                    <th>Date</th>
+                    <td>29 Agustus 2021</td>
+                  </tr>
+                  <tr>
+                    <th>Total Amount</th>
+                    <td>Rp. 399.000</td>
+                  </tr>
+                  <tr>
+                    <th>Payment Status</th>
+                    <td>SUCCESS</td>
+                  </tr>
+                </table>
+              </div>
+              <p class="mt-4 mb-3">Order Details:</p>
+              <div class="order-detail">
+                <table class="table table-bordered">
+                  <tr>
+                    <th>Products</th>
+                    <th>Total</th>
+                  </tr>
+                  <tr>
+                    <td>Some clothes title here 1x</th>
+                    <td>Rp. 399.000</td>
+                  </tr>
+                  <tr>
+                    <td style="opacity: 0;">asdasd</td>
+                    <td style="opacity: 0;">asdsad</td>
+                  </tr>
+                  
+                  <tr>
+                    <th>Subtotal</th>
+                    <td>Rp. 399.000</td>
+                  </tr>
+                  <tr>
+                    <th>Tax</th>
+                    <td>Rp. 39.000</td>
+                  </tr>
+                  <tr>
+                    <th>Shipping</th>
+                    <td>Rp. 22.000</td>
+                  </tr>
+                  <tr>
+                    <th>Total</th>
+                    <td>Rp. 459.000</td>
+                  </tr>
+                </table>
+                <div class="text-center">
+                  <a href="/my-account.html" class="btn btn-outline-primary btn-no-shadow btn-hover-white py-2-5 px-5">
+                    Go to My Account
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

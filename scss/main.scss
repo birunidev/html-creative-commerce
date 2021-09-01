@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
+$primary: #ba825e;
+$secondary: #b0b0b0;
+$success: #2cda94;
+$danger: #ff0000;
+$warning: #ffd66b;
+$light: #faf6ed;
+$dark: #252525;
+
+$theme-colors: (
+  "secondary": $secondary,
+  "success": $success,
+  "primary": $primary,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+  "warning": $warning,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "./mixins.scss";
+@import "./cards.scss";
+
+body {
+  font-family: "Inter";
+}
+.text-merri {
+  font-family: "Merriweather";
+}
+
+.navbar {
+  padding: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 99;
+}
+.main-fixed-top {
+  padding-top: 5em;
+  @include largeTablet {
+    padding-top: 7em;
+  }
+}
+
+.btn-no-shadow {
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.bg-dark-secondary {
+  background: #696969 !important;
+  &:hover {
+    background: #363636 !important;
+  }
+}
+.text-dark-primary {
+  color: #9c6f0a;
+}
+
+.search-comp {
+  width: 100%;
+  margin: 20px 0px;
+  @include largeTablet {
+    width: 70%;
+  }
+
+  input {
+    padding: 10px 20px;
+    border-radius: 0px;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .btn {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+.btn-hover-white {
+  &:hover {
+    color: white !important;
+  }
+}
+
+.jumbotron {
+  .hero-title {
+    font-weight: lighter;
+    margin-top: 30px;
+    @include largeTablet {
+      margin-top: 90px;
+    }
+  }
+}
+
+.section-title {
+  text-align: center;
+  .title-line {
+    background-color: $primary;
+    width: 51px;
+    height: 3px;
+    margin: auto;
+    display: block;
+  }
+}
+
+.payment-methods {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 67px);
+
+  @include tablet {
+    grid-template-columns: repeat(3, 67px);
+  }
+  @include largeTablet {
+    grid-template-columns: repeat(5, 67px);
+  }
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  li {
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.rating-comp {
+  display: flex;
+  i {
+    margin-right: 10px;
+  }
+}
+
+.py-2-5 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.py-2-3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.fw-semi {
+  font-weight: 600;
+}
+
+.form-group {
+  label {
+    margin-bottom: 10px;
+  }
+  .form-control {
+    padding: 10px;
+    &:focus {
+      box-shadow: none;
+    }
+
+    &:disabled {
+      color: $secondary;
+      background-color: #faf6ed;
+    }
+  }
+}
+
+.accordion-button {
+  background-color: white !important;
+  color: $dark !important;
+}
+
+.payment-detail,
+.order-detail {
+  table {
+    tr {
+      th,
+      td {
+        padding: 20px;
+      }
+    }
+  }
+}
+
+.side-menu {
+  padding: 40px 20px;
+  border: 1px solid #faf6ed;
+
+  li {
+    margin-bottom: 30px;
+
+    a {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      color: $secondary;
+
+      &:hover {
+        color: $primary;
+        font-weight: 600;
+      }
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.filter-order-status {
+  button {
+    margin-right: 20px;
+  }
+}
+.order-card {
+  padding: 15px;
+  border: 1px solid #faf6ed;
+  margin-bottom: 20px;
+  button,
+  a,
+  .total {
+    width: 100%;
+    @include tablet {
+      max-width: 313px;
+    }
+  }
+}
+
+.order-tracker {
+  @include tablet {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.order-tracker-item {
+  margin-right: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+  &:last-child {
+    .circle {
+      &::after {
+        background-color: transparent;
+      }
+    }
+  }
+
+  &.done {
+    .circle {
+      border-color: $success;
+
+      &::after {
+        @include desktop {
+          background-color: $success;
+        }
+      }
+    }
+    p {
+      color: $dark;
+      font-weight: 600;
+    }
+  }
+
+  .circle {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 2px solid $secondary;
+
+    &::after {
+      z-index: -99;
+      content: "";
+      transform: translateX(68px);
+      position: absolute;
+      width: 101px;
+      height: 3px;
+      @include desktop {
+        background-color: $secondary;
+      }
+    }
+
+    img,
+    svg {
+      transform: scale(0.8);
+      @include tablet {
+        transform: scale(1);
+      }
+    }
+
+    @include tablet {
+      width: 70px;
+      height: 70px;
+      border: 3px solid $secondary;
+    }
+
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    margin: auto;
+  }
+
+  p {
+    margin: 10px 0px;
+    color: $secondary;
+  }
+}
+.shipping-detail {
+  border: 1px solid #faf6ed;
+  padding: 15px;
+  margin-bottom: 20px;
+}
